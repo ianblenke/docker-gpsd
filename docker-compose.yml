@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+
+  gpsd:
+    build: .
+    image: sofwerx/gpsd
+    container_name: gpsd
+    hostname: gpsd
+    privileged: true
+    ports:
+      - 2947:2947
+
